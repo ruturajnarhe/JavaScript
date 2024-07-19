@@ -47,3 +47,19 @@ console.log(marvelHeroes);
 
 console.log("------------------------------------");
 
+// 7) slice() : return the piece of the array. slice(startIdx, endIdx)
+marvelHeroes = ["thor", "spiderman", "ironman", "antman", "batman"];
+console.log(marvelHeroes);
+console.log(marvelHeroes.slice(1,4));
+
+console.log("------------------------------------");
+
+// 8) splice() : change original array (add, rename, replace)
+//  splice(startIdx, deleteCount, newEle1....)
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+let newArr = arr.splice(2, 2, 101, 102);
+console.log(newArr);
+console.log(arr);
+
+
+
