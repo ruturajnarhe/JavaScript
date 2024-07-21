@@ -7,4 +7,4 @@ function countVowels(str) {
     }
     console.log(count);
 }
-countVowels("Hello world!");
+countVowels("Ruturaj narhe");
