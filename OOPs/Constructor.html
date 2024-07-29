@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class ToyotaCar {
+            constructor(brand, mileage) {
+                console.log("creating new object");
+                this.brand = brand;
+                this.mileage = mileage;
+            }
+            start() {
+                console.log("Start");
+            }
+            stop() {
+                console.log("Stop");
+            }
+        }
+        let fortuner = new ToyotaCar("Fortuner", 10);
+        console.log(fortuner);
+
+        let innova = new ToyotaCar("Innova", 12);
+        console.log(innova);
+    </script>
+</body>
+</html>
