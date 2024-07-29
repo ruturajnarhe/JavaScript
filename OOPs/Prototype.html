@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    
+    <script>
+        const employee = {
+            calcTax() {
+                console.log("tax rate is 10%");
+            },
+        };
+
+        const KaranArjun = {
+            salary : 50000,
+            calcTax() {
+                console.log("tax rate is 20%");
+            },
+        };
+        const KaranArjun2 = {
+            salary : 40000,
+        };
+        const KaranArjun3 = {
+            salary : 60000,
+        };
+        const KaranArjun4 = {
+            salary : 70000,
+        };
+
+        KaranArjun.__proto__ = employee;
+        KaranArjun2.__proto__ = employee;
+        KaranArjun3.__proto__ = employee;
+        KaranArjun4.__proto__ = employee;
+
+        console.log(KaranArjun, KaranArjun.calcTax);
+        console.log(KaranArjun2, KaranArjun2.calcTax);
+        console.log(KaranArjun3, KaranArjun3.calcTax);
+        console.log(KaranArjun4, KaranArjun4.calcTax);
+    </script>
+</body>
+</html>
