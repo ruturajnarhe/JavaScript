@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 2, 4, 7, 3, 5, 6];
+      function isOddNumber(number) {
+        return number % 2 == 0;
+      }
+
+      const oddNumbers = numbers.filter(isOddNumber);
+      console.log(oddNumbers);
+
+      let cities = [
+        { name: "Los Angeles", population: 3792621 },
+        { name: "New York", population: 8175133 },
+        { name: "Chicago", population: 2695598 },
+        { name: "Houston", population: 2099451 },
+        { name: "Philadelphia", population: 1526006 },
+      ];
+
+      let bigCities = cities.filter(function (e) {
+        return e.population > 3000000;
+      });
+      console.log(bigCities);
+    </script>
+  </body>
+</html>
