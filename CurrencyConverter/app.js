@@ -1,5 +1,5 @@
 
-const BASE_URL =  "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+const BASE_URL =  "https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
